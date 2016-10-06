@@ -14,6 +14,7 @@ import { Hero } from '../hero';
 export class HeroDetailComponent implements OnInit {
   @Input()
   hero: Hero;
+  currentUrl: string;
 
   constructor(
     private heroService: HeroService,
@@ -24,6 +25,8 @@ export class HeroDetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.forEach((params: Params) => {
       let id = +params['id'];
+      this.currentUrl = `http://localhost:4200/details/${id}`;
+
       this.heroService.getHero(id)
         .then(hero => this.hero = hero);
     });

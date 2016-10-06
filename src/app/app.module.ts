@@ -8,6 +8,7 @@ import { HeroesComponent } from './heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroService } from './hero.service';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { FacebookCommentComponent } from './facebook-comment/facebook-comment.component';
 
 import { routing } from './app.routing';
 
@@ -16,7 +17,8 @@ import { routing } from './app.routing';
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    FacebookCommentComponent
   ],
   imports: [
     BrowserModule,
