@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroService } from './hero.service';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
@@ -14,7 +15,8 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     HeroDetailComponent,
-    HeroesComponent
+    HeroesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
